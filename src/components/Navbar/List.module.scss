@@ -1,0 +1,46 @@
+.list{
+  display: flex;
+  list-style: none;
+  color: hsl(219, 9%, 45%);
+  font-size: 1.5rem;
+  margin-left: 2rem;
+
+  @media only screen and (max-width: 50em) {
+    display: none;
+  }
+
+  & li:not(:last-child) {
+    margin-right: 3rem;
+  }
+
+  & a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s ease;
+
+    padding: 4.5rem 0;
+    position: relative;
+
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      display: block;
+
+      height: .3rem;
+      background-color: hsl(26, 100%, 55%);
+      transition: .4s all;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: hsl(220, 13%, 13%);
+    }
+
+    &:hover:after{
+      width: 100%;
+    }
+  }
+
+}

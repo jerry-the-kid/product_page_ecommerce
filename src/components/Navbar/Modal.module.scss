@@ -1,0 +1,41 @@
+.modal {
+  position: absolute;
+  top: 85%;
+  right: -3%;
+  width: 35rem;
+
+  z-index: 9999;
+  border-radius: 7px;
+  box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+
+  @media only screen and (max-width: 37.5em) {
+    width: 100%;
+    top: 120%;
+    right: 0;
+  }
+
+
+  & h4 {
+    padding: 2rem 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &__footer {
+    padding: 1rem 2rem 3rem;
+  }
+
+  &__products {
+    &__co {
+      display: block;
+      width: 100%;
+      padding: 1.5rem 0;
+      font-weight: 700;
+      color: white;
+      background-color: hsl(26, 100%, 55%);
+      border: none;
+      cursor: pointer;
+      border-radius: 7px;
+    }
+  }
+}

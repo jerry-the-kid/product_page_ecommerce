@@ -1,0 +1,68 @@
+.info__container {
+  display: grid;
+  align-content: center;
+}
+
+.info{
+  width: 95%;
+  max-width: 45rem;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 50em) {
+    max-width: 70rem;
+    width: 95%;
+    min-height: 60rem;
+  }
+
+  &__description{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: hsl(26, 100%, 55%);
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
+
+  &__title {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  &__main-para {
+    color: hsl(219, 9%, 45%);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  &__price-box-container{
+
+  }
+
+  &__price-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: .6rem;
+  }
+
+  &__price{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-right: 1.4rem;
+  }
+
+  &__discount {
+    display: inline-block;
+    padding: .2rem 1rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color:hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+    border-radius: 3px;
+  }
+
+  &__actual-price{
+    //font-size: 1.4rem;
+    font-weight: 700;
+    color: hsl(220, 14%, 75%);
+  }
+
+}

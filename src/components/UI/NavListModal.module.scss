@@ -1,0 +1,39 @@
+.modal {
+  position: fixed;
+  background-color: white;
+  z-index: 1100;
+  height: 100%;
+  width: 45rem;
+  max-width: 65%;
+  padding: 3rem;
+  display: none;
+  list-style: none;
+
+  @media only screen and (max-width: 50em) {
+    display: block;
+  }
+
+  & li:not(:last-child) {
+    margin-bottom: 3rem;
+
+  }
+
+  & a {
+   text-decoration: none;
+    font-size: 3rem;
+    color: inherit;
+    font-weight: 700;
+    @media only screen and (max-width: 36.875em){
+      font-size: 2rem;
+    }
+  }
+}
+
+.close {
+  padding: 2rem 2rem 2rem 0;
+  background-color: hsl(219, 9%, 45%);
+  margin-bottom: 4rem;
+  &:hover {
+    background-color: black;
+  }
+}

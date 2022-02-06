@@ -1,0 +1,12 @@
+.back-drop{
+  display: none;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+
+  @media only screen and (max-width: 50em) {
+    display: block;
+  }
+
+}

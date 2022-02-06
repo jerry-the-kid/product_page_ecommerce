@@ -1,0 +1,22 @@
+.product {
+  padding: 0;
+
+  width: 120rem;
+  max-width: 90%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media only screen and (max-width: 70em) {
+    grid-column-gap: 2rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    grid-row-gap: 4rem;
+  }
+
+}

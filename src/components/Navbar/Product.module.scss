@@ -1,0 +1,40 @@
+.product {
+  padding: 2rem;
+  display: grid;
+
+  grid-template-columns: min-content 1fr min-content;
+  align-items: center;
+  grid-column-gap: 1rem;
+  //border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  &__preview {
+    width: 4.5rem;
+    border-radius: 3px;
+    margin-right: 1rem;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.4rem;
+    grid-row-gap: .5rem;
+
+  }
+
+  &__info p:not(:last-child) {
+    color: hsl(219, 9%, 45%);
+  }
+
+  &__heading {
+    grid-column: 1/-1;
+  }
+
+  &__delete {
+    background-color: #C3CAD9;
+    padding: 1.2rem;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+}

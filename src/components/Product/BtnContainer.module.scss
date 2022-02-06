@@ -1,0 +1,52 @@
+.btn-container {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-column-gap: 1.5rem;
+
+  margin-top: 4rem;
+}
+
+.btn-box{
+  display: flex;
+  align-items: center;
+  background-color: hsl(223, 64%, 98%);
+  padding: 1.6rem 1rem;
+  justify-content: space-between;
+  border-radius: 7px;
+}
+
+.btn{
+  padding: 1rem;
+  background-color: hsl(26, 100%, 55%);
+}
+
+.cart {
+  background-color: hsl(26, 100%, 55%);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+  border-radius: 11px;
+  box-shadow: 0 1.5rem 2rem rgba(255, 125, 26, .2);
+  cursor: pointer;
+  transition: all .4s;
+
+  &:active {
+    transform: translateY(-.4rem);
+  }
+
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 0 1.5rem 1.5rem rgba(255, 125, 26, .2);
+  }
+
+}
+
+.cart-icon{
+  margin-right: 1rem;
+  height: 1.7rem;
+  cursor: pointer;
+
+}

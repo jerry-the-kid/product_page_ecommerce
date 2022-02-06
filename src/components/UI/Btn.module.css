@@ -1,0 +1,5 @@
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color .04s ease;
+}

@@ -1,0 +1,109 @@
+.previews {
+
+  &__main {
+    position: relative;
+    display: block;
+    max-width: 80%;
+    width: 42rem;
+    //margin: 0 0 2rem 4.5rem;
+    margin: 0 auto 2rem;
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 40rem;
+
+    @media only screen and (max-width: 71.875em) {
+      max-width: 90%;
+    }
+
+    @media only screen and (max-width: 50em) {
+      width: 70rem;
+      max-width: 95%;
+      min-height: 60rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 0px;
+      min-height: 55rem;
+    }
+
+    &-btn {
+      padding: 2.5rem;
+      background-color: black;
+      border-radius: 50%;
+    }
+
+    &-btn-container {
+      display: none;
+      position: absolute;
+      z-index: 888;
+      top: 50%;
+      background-color: hsl(223, 64%, 98%);
+      transform: translateY(-50%);
+      border-radius: 50%;
+
+      @media only screen and (max-width: 50em) {
+        display: block;
+      }
+    }
+
+    &-btn-next {
+      right: 2.4rem;
+    }
+
+    &-btn-previous {
+      left: 2.4rem;
+    }
+
+
+    & img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      transition: opacity .4s ease-in-out;
+
+    }
+  }
+
+  &__thumbnails {
+    max-width: 80%;
+    width: 42rem;
+    //margin: 0 0 2rem 4.5rem;
+    margin: 0 auto 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2.5rem;
+
+    @media only screen and (max-width: 71.875em) {
+      max-width: 90%;
+    }
+
+    @media only screen and (max-width: 50em) {
+      display: none;
+    }
+
+
+    & img {
+      width: 100%;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: opacity .4s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.active {
+  outline: 5px hsl(26, 100%, 55%) solid;
+  opacity: .5;
+}
+
+.active-img {
+  opacity: 1 !important;
+}
